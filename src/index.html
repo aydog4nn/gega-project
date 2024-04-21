@@ -1,11 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css">
-</head>
-<body>
-  <h1 class="text-3xl font-bold underline">Hello World</h1>  
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gemunu+Libre:wght@200..800&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header class="bg-black py-12 text-gega-grey font-gemunu uppercase">
+        <!-- Header Container -->
+        <div class="container flex items-center justify-between space-x-16">
+            <!-- Logo -->
+            <a href="#" class="text-6xl font-bold text-gega-grey">GEGA</a>
+            <!-- Navigation -->
+            <nav class="flex justify-between flex-1">
+                <!-- Menu -->
+                <div class="flex items-center text-lg space-x-8">
+                    <a href="#" class="hover:text-gega-melon transition duration-500">Movies</a>
+                    <a href="#" class="hover:text-gega-melon transition duration-500">celebrities</a>
+                    <a href="#" class="hover:text-gega-melon transition duration-500">blog</a>
+                    <a href="#" class="hover:text-gega-melon transition duration-500">news</a>
+                    <a href="#" class="hover:text-gega-melon transition duration-500">about</a>
+                </div>
+                <!-- Login Area -->
+                <div class="flex items-center space-x-8">
+                    <!-- Search Area -->
+                    <form>
+                        <div class="group border-r px-4 mx-4 py-1 border-gega-red">
+                           <input type="text" class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none w-44"> 
+                            <button><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                    
+                </div>
+            </nav>
+        </div>
+
+    </header>
+  </body>
 </html>
