@@ -20,9 +20,15 @@
     />
     <link rel="stylesheet" href="./css/styles.css" />
   </head>
-  <body>
+  <body class="font-open dark">
+    <!-- Dark/Light Toggle -->
+    <div class="absolute top-1 left-5 cursor-pointer text-lg">
+        <i class="fa fa-sun text-white" id="sun"></i>
+        <i class="fa fa-moon text-black hidden" id="moon"></i>
+    </div>
+
     <!-- Header Section -->
-    <header class="bg-black py-6 lg:py-12 text-gega-grey uppercase">
+    <header class="dark:bg-black bg-white py-6 lg:py-12 dark:text-gega-grey text-black uppercase">
       <!-- Header Container -->
       <div
         class="container flex items-center justify-between space-x-8 lg:space-x-16"
@@ -93,7 +99,7 @@
       </div>
     </header>
     <!-- Hero Section -->
-    <section class="h-64 md:h-96 lg:h-128 group relative">
+    <section class="h-96 lg:h-128 group relative">
       <!-- Hero Images -->
       <img
         src="./images/batman.jpg"
@@ -173,7 +179,9 @@
     <!-- Movies Section -->
     <section class="py-24 bg-black">
       <!-- Movies Content -->
-      <div class="container flex flex-col lg:flex-row space-x-16">
+      <div
+        class="container flex flex-col lg:flex-row lg:space-x-16 space-y-8 lg:space-y-0"
+      >
         <!-- Left Content -->
         <div class="basis-2/3">
           <!-- Titles -->
@@ -191,7 +199,9 @@
           <!-- Images Content -->
           <div class="flex flex-wrap">
             <!-- Image 1 -->
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv1.jpg"
@@ -223,7 +233,9 @@
                 </div>
               </div>
             </div>
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv2.jpg"
@@ -255,7 +267,9 @@
                 </div>
               </div>
             </div>
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv3.jpg"
@@ -287,7 +301,9 @@
                 </div>
               </div>
             </div>
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv4.jpg"
@@ -319,7 +335,9 @@
                 </div>
               </div>
             </div>
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
               <!-- Image -->
               <img
                 src="./images/mv5.jpg"
@@ -351,7 +369,77 @@
                 </div>
               </div>
             </div>
-            <div class="group relative overflow-hidden basis-1/3">
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3"
+            >
+              <!-- Image -->
+              <img
+                src="./images/mv2.jpg"
+                class="group-hover:scale-110 opacity-50 duration-500"
+              />
+              <!-- Image Detail Container -->
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  Oblivion
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sint, velit!
+                </p>
+                <!-- Icons Container -->
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a class="hover:text-gega-red" href="#">
+                    <i class="fa fa-play"></i>
+                  </a>
+                  <a class="hover:text-gega-red" href=""
+                    ><i class="fa fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden"
+            >
+              <!-- Image -->
+              <img
+                src="./images/mv4.jpg"
+                class="group-hover:scale-110 opacity-50 duration-500"
+              />
+              <!-- Image Detail Container -->
+              <div class="absolute px-6 bottom-8">
+                <h3
+                  class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500"
+                >
+                  Oblivion
+                </h3>
+                <p
+                  class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey"
+                >
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Sint, velit!
+                </p>
+                <!-- Icons Container -->
+                <div
+                  class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500"
+                >
+                  <a class="hover:text-gega-red" href="#">
+                    <i class="fa fa-play"></i>
+                  </a>
+                  <a class="hover:text-gega-red" href=""
+                    ><i class="fa fa-arrow-right"></i
+                  ></a>
+                </div>
+              </div>
+            </div>
+            <div
+              class="group relative overflow-hidden basis-1/3 md:basis-1/4 lg:basis-1/3 hidden md:block lg:hidden"
+            >
               <!-- Image -->
               <img
                 src="./images/mv6.jpg"
@@ -386,70 +474,366 @@
           </div>
         </div>
         <!-- Right Content -->
-        <div class="basis-1/3">
+        <div class="basis-1/3 pl-10 lg:pl-0">
           <!-- Title -->
           <h2 class="text-gega-grey mb-8">Hot News</h2>
           <!-- News Container -->
-          <div class="flex flex-row lg:flex-col lg:h-full lg:pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4">
+          <div
+            class="flex flex-row lg:flex-col lg:h-full lg:pb-16 justify-start lg:justify-between flex-wrap lg:flex-nowrap space-y-4"
+          >
             <!-- Item -->
             <div class="flex items-center group basis-3/4 md:basis-1/2">
               <!-- News Image Container -->
               <div class="basis-1/3 h-full">
-                <img src="./images/new1.jpg" class="h-full w-full object-cover" alt="">
+                <img
+                  src="./images/new1.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
               </div>
               <!-- Item Detail -->
-              <div class="pl-4 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quae!</p>
-                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOW 01 2022</p>
+              <div
+                class="pl-4 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500"
+              >
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, quae!
+                </p>
+                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">
+                  ON NOW 01 2022
+                </p>
               </div>
             </div>
             <div class="flex items-center group basis-3/4 md:basis-1/2">
               <!-- News Image Container -->
               <div class="basis-1/3 h-full">
-                <img src="./images/new2.jpg" class="h-full w-full object-cover" alt="">
+                <img
+                  src="./images/new2.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
               </div>
               <!-- Item Detail -->
-              <div class="pl-4 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quae!</p>
-                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOW 01 2022</p>
+              <div
+                class="pl-4 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500"
+              >
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, quae!
+                </p>
+                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">
+                  ON NOW 01 2022
+                </p>
               </div>
             </div>
             <div class="flex items-center group basis-3/4 md:basis-1/2">
               <!-- News Image Container -->
               <div class="basis-1/3 h-full">
-                <img src="./images/new3.jpg" class="h-full w-full object-cover" alt="">
+                <img
+                  src="./images/new3.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
               </div>
               <!-- Item Detail -->
-              <div class="pl-4 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quae!</p>
-                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOW 01 2022</p>
+              <div
+                class="pl-4 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500"
+              >
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, quae!
+                </p>
+                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">
+                  ON NOW 01 2022
+                </p>
               </div>
             </div>
             <div class="flex items-center group basis-3/4 md:basis-1/2">
               <!-- News Image Container -->
               <div class="basis-1/3 h-full">
-                <img src="./images/new4.jpg" class="h-full w-full object-cover" alt="">
+                <img
+                  src="./images/new4.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
               </div>
               <!-- Item Detail -->
-              <div class="pl-4 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quae!</p>
-                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOW 01 2022</p>
+              <div
+                class="pl-4 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500"
+              >
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, quae!
+                </p>
+                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">
+                  ON NOW 01 2022
+                </p>
               </div>
             </div>
-            <div class="flex items-center group basis-3/4 md:basis-1/2">
+            <div
+              class="flex items-center group basis-3/4 md:basis-1/2 md:hidden lg:flex"
+            >
               <!-- News Image Container -->
               <div class="basis-1/3 h-full">
-                <img src="./images/new5.jpg" class="h-full w-full object-cover" alt="">
+                <img
+                  src="./images/new5.jpg"
+                  class="h-full w-full object-cover"
+                  alt=""
+                />
               </div>
               <!-- Item Detail -->
-              <div class="pl-4 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
-                <p class="text-sm">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, quae!</p>
-                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">ON NOW 01 2022</p>
+              <div
+                class="pl-4 basis-2/3 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500"
+              >
+                <p class="text-sm">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Eveniet, quae!
+                </p>
+                <p class="text-xs tracking-tighter mt-2 font-bold font-gemunu">
+                  ON NOW 01 2022
+                </p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- Matrix Section -->
+    <section class="bg-gradient-to-tr from-white to bg-gray-400">
+      <!-- Matrix Section Container -->
+      <div
+        class="container flex items-center justify-center relative pl-10 lg:pl-0"
+      >
+        <!-- Left Content -->
+        <div class="hidden md:block md:basis-1/3 lg:basis-1/2">
+          <img
+            src="./images/matrix.png"
+            alt=""
+            class="lg:absolute lg:bottom-0"
+          />
+        </div>
+        <!-- Right Content -->
+        <div class="mt-6 md:mt-0 md:basis-2/3 lg:basis-1/2">
+          <!-- Right Content Container -->
+          <div class="flex flex-col justify-center py-10 w-3/4 md:w-full">
+            <h3 class="tracking-wider text-gega-melon">
+              ACTION,DRAMA,THRILLER
+            </h3>
+            <h2 class="mb-2">Matrix Reloaded</h2>
+            <p class="text-sm mb-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius
+              animi quia officia consequatur iure! Error cumque facilis nemo in
+              fugit.
+            </p>
+            <h3 class="tracking-wider text-gega-red">8 wins 34 nominations</h3>
+          </div>
+        </div>
+        <!-- Oldie -->
+        <div
+          class="left-10 absolute -top-12 lg:left-0 w-24 h-24 bg-gega-melon rounded-full text-center flex items-center"
+        >
+          <p
+            class="font-gemunu uppercase font-bold text-xl text-gega-red -rotate-45"
+          >
+            Oldie & Goldie
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- Post Section -->
+    <section class="py-24 bg-black text-gega-grey">
+      <!-- Container -->
+      <div class="container px-10 lg:px-0">
+        <!-- Title -->
+        <h2 class="text-gega-red">
+          <a href="#">Popular Posts</a>
+        </h2>
+        <!-- Grid Area -->
+        <div class="grid grid-cols-6 gap-10">
+          <!-- Item 1 -->
+          <div class="col-span-6 md:col-span-3 border border-gega-red">
+            <!-- Item 1 Header -->
+            <div
+              class="border-b border-gega-red p-4 flex items-center justify-between"
+            >
+              <h3>Lorem ipsum dolor sit.</h3>
+              <img src="./images/userava1.jpg" alt="" class="rounded-full" />
+            </div>
+            <!-- Item 1 Para -->
+            <p class="p-4 text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+              iusto mollitia at aliquam ipsa sint officia dolores nesciunt.
+              Voluptates sit ut voluptate aliquam odit laudantium.
+            </p>
+
+            <!-- Item 1 Footer -->
+            <div
+              class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs"
+            >
+              <p>ON DEC 17,2024</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa fa-comment"></i>
+                <p>12</p>
+                <i class="fa fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 2 -->
+          <div class="col-span-6 md:col-span-3 border border-gega-red">
+            <!-- Item 1 Header -->
+            <div
+              class="border-b border-gega-red p-4 flex items-center justify-between"
+            >
+              <h3>Lorem ipsum dolor sit.</h3>
+              <img src="./images/userava2.jpg" alt="" class="rounded-full" />
+            </div>
+            <!-- Item 1 Para -->
+            <p class="p-4 text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+              iusto mollitia at aliquam ipsa sint officia dolores nesciunt.
+              Voluptates sit ut voluptate aliquam odit laudantium.
+            </p>
+
+            <!-- Item 1 Footer -->
+            <div
+              class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs"
+            >
+              <p>ON DEC 17,2024</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa fa-comment"></i>
+                <p>12</p>
+                <i class="fa fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 3 -->
+          <div
+            class="col-span-6 md:col-span-2 lg:col-span-2 border border-gega-red"
+          >
+            <!-- Item 1 Header -->
+            <div
+              class="border-b border-gega-red p-4 flex items-center justify-between"
+            >
+              <h3>Lorem ipsum dolor sit.</h3>
+              <img src="./images/userava3.jpg" alt="" class="rounded-full" />
+            </div>
+            <!-- Item 1 Para -->
+            <p class="p-4 text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+              iusto mollitia at aliquam ipsa sint officia dolores nesciunt.
+              Voluptates sit ut voluptate aliquam odit laudantium.
+            </p>
+
+            <!-- Item 1 Footer -->
+            <div
+              class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs"
+            >
+              <p>ON DEC 17,2024</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa fa-comment"></i>
+                <p>12</p>
+                <i class="fa fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 4 -->
+          <div class="col-span-6 md:col-span-2 border border-gega-red">
+            <!-- Item 1 Header -->
+            <div
+              class="border-b border-gega-red p-4 flex items-center justify-between"
+            >
+              <h3>Lorem ipsum dolor sit.</h3>
+              <img src="./images/userava4.jpg" alt="" class="rounded-full" />
+            </div>
+            <!-- Item 1 Para -->
+            <p class="p-4 text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+              iusto mollitia at aliquam ipsa sint officia dolores nesciunt.
+              Voluptates sit ut voluptate aliquam odit laudantium.
+            </p>
+
+            <!-- Item 1 Footer -->
+            <div
+              class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs"
+            >
+              <p>ON DEC 17,2024</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa fa-comment"></i>
+                <p>12</p>
+                <i class="fa fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+          <!-- Item 5 -->
+          <div class="hidden lg:block lg:col-span-2 border border-gega-red">
+            <!-- Item 1 Header -->
+            <div
+              class="border-b border-gega-red p-4 flex items-center justify-between"
+            >
+              <h3>Lorem ipsum dolor sit.</h3>
+              <img src="./images/userava5.jpg" alt="" class="rounded-full" />
+            </div>
+            <!-- Item 1 Para -->
+            <p class="p-4 text-sm">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Enim
+              iusto mollitia at aliquam ipsa sint officia dolores nesciunt.
+              Voluptates sit ut voluptate aliquam odit laudantium.
+            </p>
+
+            <!-- Item 1 Footer -->
+            <div
+              class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs"
+            >
+              <p>ON DEC 17,2024</p>
+              <div class="flex items-center justify-center space-x-1">
+                <i class="fa fa-comment"></i>
+                <p>12</p>
+                <i class="fa fa-heart"></i>
+                <p>09</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Footer Section -->
+    <footer class="bg-black text-gega-grey">
+      <!-- Footer Container -->
+      <div class="container flex flex-col md:flex-row px-10 lg:px-0 pb-8">
+        <!-- Left -->
+        <div class="basis-1/3">
+          <a
+            href="#"
+            class="text-2xl lg:text-3xl font-bold text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey">GEGA</a>
+            <p class="text-sm mt-2">2022 ZephyrDev No &copy; COPYRIGHT</p>
+        </div>
+        <!-- Middle -->
+        <div class="basis-1/3">
+            <h2 class="mb-2 text-gega-red">Links</h2>
+            <div class="grid grid-cols-5 gap-2 uppercase">
+                <a href="#" class="col-span-2 hover:text-gega-melon duration-500">Movies</a>
+                <a href="#" class="col-span-2 hover:text-gega-melon duration-500">celebrities</a>
+                <a href="#" class="col-span-2 hover:text-gega-melon duration-500">blog</a>
+                <a href="#" class="col-span-2 hover:text-gega-melon duration-500">news</a>
+                <a href="#" class="col-span-2 hover:text-gega-melon duration-500">about</a>
+                
+            </div>
+        </div>
+        <!-- Right -->
+        <div class="basis-1/3">
+            <h2 class="mb-2 text-gega-red">FOLLOW US</h2>
+            <form action="" class="flex">
+                <input class="py-1 px-2 bg-transparent border border-gega-red placeholder:text-xs outline-none" placeholder="TYPE YOUR EMAIL" type="text">
+                <button class="py-1 px-2 bg-transparent border border-gega-red bg-gega-red font-gemunu uppercase">Subscribe</button>
+            </form>    
+        </div>
+    </div>
+      
+    </footer>
+    <script src="./js/script.js"></script>
   </body>
 </html>
